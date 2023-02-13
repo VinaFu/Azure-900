@@ -14,6 +14,10 @@ Vocabularies:
       scalability - 可扩展性
       CapEx - Capital Expenditure 资本支出
       OpEx - Operational Expenditure 运营支出
+      latency - the time it takes data to travel
+      datacenters -physical location
+      latency-defined perimeter - within this area/perimeter, the datacenters are not too far from each other, low latency
+      
 
 
 Resources: compute, networking, storage
@@ -88,4 +92,9 @@ Cloud Architecture Models:
 
   Regions & Availigility Zones
   
-      
+      Regions:
+            Definition:       A region is a set of datacenters deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network.          
+            How to choose:    Location(minimize the latency), Fetures(limitations according to regions), Price
+      Availability Zones:
+            Paired Region:    
+            
