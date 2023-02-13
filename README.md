@@ -3,7 +3,7 @@ Certificate Note
 
 Vocabularies: 
 
-      IaaS - Infrastructure  as a Service
+      IaaS - Infrastructure as a Service
       PaaS - Platform as a Service    ( Superset of IaaS; has something more than IaaS)
       SaaS - Software as a Service    (have a Apps, pay for it: Microsoft 365)
       CLI - Command Line Interface - bash
@@ -12,14 +12,9 @@ Vocabularies:
       Cloud Shell - 
       ARM template - ARM: Azure Resource Manager
       scalability - 可扩展性
-      
-      IaaS provides access to resources such as virtual machines and virtual storage, PaaS provides execution environments, application development, and deployment tools, and SaaS provides software as a service to end-users.
-      
-Cloud Architecture Models: 
+      CapEx - Capital Expenditure 资本支出
+      OpEx - Operational Expenditure 运营支出
 
-      Private
-      Public 
-      Hybrid
 
 Resources: compute, networking, storage
 
@@ -37,11 +32,60 @@ Language of Cloud Computing:
       Governance - cloud deployments to meet requirement standards
       Manageability - management of cloud resources and how to interact with them.
       
+Language of Cloud Economics:
       
+      CapEx:
+      OpEx: pay-as-you-go
       
+      Pricing Models:
+      Hourly Pricing - VMs, APP Services
+      Consumption - pay for the resources used
       
+Azure Architecture/ Cloud Service Models:
+
+      IaaS provides access to resources such as virtual machines and virtual storage
+            infrastructure = actual servers
+            scaling is fast; X own hardware
+            [VMs + Networks + Physical Buildings + storage]
+      PaaS provides execution environments, application development, and deployment tools
+            supports web application life cycle
+            avoid license hell
+            [IaaS + Middleware + Tools] middleware, i.e. database management tools
+      SaaS provides software as a service to end-users
+            Providing a managed service
+            pay an access fee to use
+            no maintenance and latest features
+            [PaaS + Apps] e.g Office 365
+      Serverless 
+            Azure is an instance of this
+            Extreme PaaS
+            [PaaS - extreme]
       
-      
-      
-      
+Cloud Architecture Models: 
+
+      Private
+            Pros:
+                  benefits of public cloud
+                  security           
+            Cons:
+                  Maintenance
+                  Staffing
+      Public -- Azure, AWS, GCP
+            Pros:
+                  No purchase of hardware
+                  Low monthly fees (monthly usage)
+            Cons:
+                  No control over features and version
+                  No physical access
+      Hybrid     
+            Pros:
+                  Avoid disruptions and outages
+                  Adhere to regulation, governance
+                  Span both public and private cloud
+                  Alleviate CapEx 
+            Cons:
+                  Complex infrastructure
+
+  Regions & Availigility Zones
+  
       
