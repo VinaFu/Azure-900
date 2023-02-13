@@ -17,7 +17,8 @@ Vocabularies:
       latency - the time it takes data to travel
       datacenters -physical location
       latency-defined perimeter - within this area/perimeter, the datacenters are not too far from each other, low latency
-      
+      API - Application Programming Interface 应用程序接口
+      ACI -Azure Container Instance
 
 
 Resources: compute, networking, storage
@@ -93,8 +94,48 @@ Cloud Architecture Models:
   Regions & Availigility Zones
   
       Regions:
-            Definition:       A region is a set of datacenters deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network.          
-            How to choose:    Location(minimize the latency), Fetures(limitations according to regions), Price
-      Availability Zones:
-            Paired Region:    
+            Definition:      A region is a set of datacenters deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network.          
+            How to choose:     Location(minimize the latency), Fetures(limitations according to regions), Price
+            Paired Region:     配对区域 two Azure regions within the same geographic area to provide geographically redundant solutions
             
+      Availability Zones:
+            Within a region and each zone has its own separate power, cooling and networking. Used for protection data from failures.    
+            
+Virtual Machine:
+
+      VMs is the core of Azure compute 
+      A virtual machine is your machine exclusively
+      X buy, own or control any hardware
+      An IaaS offering, u responsible
+      take advantage of Azure tools
+      Price goes up as resources go up
+      
+Scale sets: automaticaaly adjust to the volumn/ capacity.
+
+App Services: An easy way to host and manage your web application
+
+      A PaaS offering on Azure
+      Web Apps are used to host web sites and web aaplications
+      Web Apps for containers can host your existing container images
+      API Apps can host your data backend services
+
+Azure Container Instance - put all the things together?
+
+Azure Kubernetes Service/ K8s - manage lots of containers in Azure (Greek for "governor/ capitain")
+      
+      replicate container architectures
+      Standard Azure Services Included
+      ACR - Azure Ccontainer Registry 
+      
+
+
+
+
+
+
+
+
+
+
+
+
