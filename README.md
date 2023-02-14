@@ -23,8 +23,7 @@ Vocabularies:
       API - Application Programming Interface 应用程序接口
       ACI -Azure Container Instance
 
-
-Resources: compute, networking, storage
+# 1. Concepts of Cloud
 
 Language of Cloud Computing: 
       
@@ -58,22 +57,32 @@ Pricing Models:
                   - stop paying for resources when they not needed.
       
       
-Azure Architecture/ Cloud Service Models:
+Cloud Service Models:
 
+      On Premises: customer do all the things
       IaaS provides access to resources such as virtual machines and virtual storage: Google compute engine
             infrastructure = actual servers
             scaling is fast; X own hardware
             pay-as-you-go
+            agile
+            No CapEx no upfront costs
+            Consumption-based model(OpEx)
             allows to deploy [VMs + Networks + Physical Buildings + storage] in a cloud
       PaaS provides execution environments, application development, and deployment tools: Azure, AWS
             supports web application life cycle
             avoid license hell
             develop apps by themselves
             don't maintain/update the infrastructure
+            No CapEx no upfront costs
+            Extra agile
+            less hardware and software skills needed
+            Consumption-based model(OpEx)
             [IaaS + Middleware + Tools] deploy Web servers, database and development tools in a cloud
       SaaS provides software as a service to end-users: Google, Salesforce
             Providing a managed service
-            pay an access fee to use
+            pay an access fee to use/ pay-as-you-go
+            No CapEx no upfront costs
+            agile
             no maintenance and latest features
             software stored in a central location and customers access via subscription basis
             [PaaS + Apps] allows to run apps in cloud e.g Office 365
@@ -84,6 +93,7 @@ Azure Architecture/ Cloud Service Models:
       Serverless 
             Azure is an instance of this
             Extreme PaaS
+            deliver exact units of recources.
             [PaaS - extreme]
       
 Cloud Architecture Models: 
@@ -121,8 +131,17 @@ Cloud Architecture Models:
             Pros:
             Cons:
 
+# 2. Architecture and Services
 
-  Regions & Availigility Zones
+      Describe Azure regions, region pairs, and sovereign regions.
+      Describe Availability Zones.
+      Describe Azure datacenters.
+      Describe Azure resources and Resource Groups.
+      Describe subscriptions.
+      Describe management groups.
+      Describe the hierarchy of resource groups, subscriptions, and management groups.
+
+Regions & Availigility Zones
   
       Regions:
             Definition:      A region is a set of datacenters deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network.          
@@ -158,8 +177,9 @@ Azure Kubernetes Service/ K8s - manage lots of containers in Azure (Greek for "g
       Standard Azure Services Included
       ACR - Azure Ccontainer Registry 
       
+Virtual Network
 
-
+Gateway 
 
 
 
