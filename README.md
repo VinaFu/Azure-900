@@ -7,6 +7,8 @@ Vocabularies:
       PaaS - Platform as a Service    ( Superset of IaaS; has something more than IaaS)
       SaaS - Software as a Service    (have a Apps, pay for it: Microsoft 365)
       FaaS - Function as a Service    (on serverless)
+      NaaS - Network as a Service
+      DSaaS - Data Science as a Service
       CLI - Command Line Interface - bash
       VM - virtual machine is a computer file, typically called an image, that behaves like an actual computer
       Power Shell - commonly used for automating the management of systems. It is also used to build, test, and deploy solutions, often in CI/CD environments.
@@ -62,18 +64,23 @@ Azure Architecture/ Cloud Service Models:
             infrastructure = actual servers
             scaling is fast; X own hardware
             pay-as-you-go
-            [VMs + Networks + Physical Buildings + storage]
+            allows to deploy [VMs + Networks + Physical Buildings + storage] in a cloud
       PaaS provides execution environments, application development, and deployment tools: Azure, AWS
             supports web application life cycle
             avoid license hell
-            [IaaS + Middleware + Tools] middleware, i.e. database management tools
+            develop apps by themselves
+            don't maintain/update the infrastructure
+            [IaaS + Middleware + Tools] deploy Web servers, database and development tools in a cloud
       SaaS provides software as a service to end-users: Google, Salesforce
             Providing a managed service
             pay an access fee to use
             no maintenance and latest features
-            [PaaS + Apps] e.g Office 365
+            software stored in a central location and customers access via subscription basis
+            [PaaS + Apps] allows to run apps in cloud e.g Office 365
       FaaS Function as a server
             uses a service-hosted remote procedure call.
+      DSaaS - data/ analytics
+      NaaS - network transport connectivity
       Serverless 
             Azure is an instance of this
             Extreme PaaS
@@ -91,7 +98,7 @@ Cloud Architecture Models:
       Public -- Azure, AWS, GCP - owned, managed by vendor alone
             Pros:
                   No purchase/maintenance of hardware and software
-                  only pays for the services that they consume
+                  only pays for the services that they consume/ pay-as-you-go
                   Lcost-effective reliability
                   scalability is unlimited
                   high reliability - a vast network of servers ensures against failure
@@ -103,7 +110,8 @@ Cloud Architecture Models:
                   Avoid disruptions and outages
                   Adhere to regulation, governance
                   Span both public and private cloud
-                  Alleviate CapEx 
+                  Alleviate CapEx - pay for extra computing power only when needed
+                  scalibility
                   flexibility
                   control
                   ease
