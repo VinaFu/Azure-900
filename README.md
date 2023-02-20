@@ -30,7 +30,7 @@ Language of Cloud Computing:
       High Availability | Reliability | Scalability | 
       Security | Predictability | Governance | Manageability 
 
-      High Availability - core = always available; X own, add more servers with a click, replace when it fails, use cluster.
+      High Availability - core = always available; X own, add more servers with a click, replace when it fails, use cluster. - little downtime
       Reliability - fault tolerance, disaster recovery; deploy in multiple locations, no single point of failure
       Scalability - Not have to automatically adjust resources to meet demand. (increase/decrease number of VMs)
                     Horizontal(sacaling out; typical) vs. Vertical Scaling(scaling up)
@@ -43,7 +43,7 @@ Language of Cloud Computing:
 Language of Cloud Economics:
       
       CapEx: one-time expenditure to buy tangible assets, such as building the data center
-      OpEx: ongoing expenses incurred on services and products. pay-as-you-go
+      OpEx: ongoing expenses incurred on services and products. pay-as-you-go. How much you use.
       
 Pricing Models:
       Fixed price pricing - Hourly Pricing 
@@ -59,7 +59,8 @@ Pricing Models:
       
 Cloud Service Models:
 
-      On Premises: customer do all the things
+      On Premises: customer do all the things - include the infrastrauctures.
+      
       IaaS provides access to resources such as virtual machines and virtual storage: Google compute engine
             infrastructure = actual servers
             scaling is fast; X own hardware
@@ -94,7 +95,7 @@ Cloud Service Models:
             Azure is an instance of this
             Extreme PaaS
             deliver exact units of recources.
-            [PaaS - extreme]
+            [PaaS - extreme] - allocates the extract amount of application needs.
       
 Cloud Architecture Models: 
 
